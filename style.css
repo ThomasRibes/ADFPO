@@ -36,6 +36,7 @@ html{
   flex-direction: column;
   align-items: center;
   order: 0;
+  width: 300px;
 }
 
 .logo-text{
@@ -50,7 +51,7 @@ html{
   background:#206020;
   border-radius: 50%;
   height: 5em;
-  width: 200px;
+  width: 300px;
   align-self: center;
   order:1;
 }
@@ -68,17 +69,18 @@ html{
 
 .social{
   display:flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width:200px;
+  width:300px;
   order:2;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .social-logo{
   text-decoration: none;
   color: #206020;
+  margin: 0 10px 0 10px;
 }
 
 /*section*/
@@ -105,6 +107,65 @@ background-color:  rgba(20, 20, 20, 0.6);
 border-radius:15px;
 padding: 10px;
 }
+
+.form{
+  width: 100%;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #331a00;
+  opacity: 0.3; /* Firefox */
+}
+
+textarea {
+  height: 35vh;
+}
+.submit {
+  color:#331a00;
+}
+
+
+ /* The snackbar - position it at the bottom and in the middle of the screen */
+ #snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 50%; /* Set a default minimum width */
+  background-color: #333; /* Black background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  z-index: 1; /* Add a z-index if needed */
+  bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+} 
 
 
 /*footer*/
@@ -155,6 +216,9 @@ size:0.02vh;
   .ev-container{
     order:1;
   }
+  .form{
+    width: 75%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -175,5 +239,16 @@ size:0.02vh;
   .text{
     width:80vw;
   }
+  .form{
+    width: 50%;
+  }
 }
+
+@media only screen and (min-width: 1250px) {
+  /* Pour PC de bureau */
+  .form{
+    width: 40%;
+  }
+}
+
 
