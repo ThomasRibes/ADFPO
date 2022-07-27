@@ -10,7 +10,15 @@ function snackPop() {
   setTimeout(function() { x.className = x.className.replace("show", "");}, 3000);
 
   // redirect to index.html after 6s
-  setTimeout(function() {window.location='./index.html'}, 2500);} 
+  setTimeout(function() {window.location='./index.html'}, 2500);
+} 
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  snackPop();
+});
+
+
 
 /* backtotop button */
 //Get the button:

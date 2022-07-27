@@ -40,16 +40,16 @@
   <!-- contenu principal section -->
   <section>
     <div class="parallax">
-      <form class="text d-flex flex-column justify-content-center align-content-center w-75" action="./index.html">
+      <form id="form" class="text d-flex flex-column justify-content-center align-content-center w-75" action="./index.html" onSubmit="return snackPop();">
         <label for="fname" class="align-self-center m-1">Prénom:</label><br>
-        <input type="text" id="fname" name="fname" class="align-self-center form m-1"><br>
+        <input type="text" id="fname" name="fname" class="align-self-center form m-1" required><br>
         <label for="lname" class="align-self-center m-1">Nom:</label><br>
-        <input type="text" id="lname" name="lname" class="align-self-center form m-1">
+        <input type="text" id="lname" name="lname" class="align-self-center form m-1" required>
         <label for="email" class="align-self-center m-1">Email:</label><br>
-        <input type="email" id="email" name="email" class="align-self-center form m-1"><br>
+        <input type="email" id="email" name="email" class="align-self-center form m-1" required><br>
         <label for="text" class="align-self-center m-1">Demande de réservation et/ou d'informations:</label><br>
-        <textarea type="text" id="text" name="text" class="align-self-center form m-1" placeholder="Indiquez l'évènement auquel vous voulez participer"></textarea>
-        <input type="button" value="Envoyer ma demande" class="align-self-center form m-3 submit" onclick="snackPop()">
+        <textarea type="input" id="text" name="text" class="align-self-center form m-1" placeholder="Indiquez l'évènement auquel vous voulez participer" required></textarea>
+        <input type="submit" value="Envoyer ma demande" class="align-self-center form m-3 submit">
       </form>
       <div id="snackbar" class="">Merci pour votre demande.<br>Vous allez être redirigé vers la page d'accueil.</div>
     </div>    
