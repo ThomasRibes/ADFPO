@@ -4,7 +4,7 @@
 
 html{
   margin: 0;
- padding: 0;
+  padding: 0;
 }
 
 
@@ -26,7 +26,7 @@ html{
   transform: scale(1.05);
   transition: transform 0.5s  ;
 }
-.lien-ev:hover,.social-logo:hover,.card:hover{
+.linkEv:hover,.socialLogo:hover,.card:hover{
   transform: scale(1.1);
   transition: transform 0.5s;
 }
@@ -39,12 +39,12 @@ html{
   width: 300px;
 }
 
-.logo-text{
+.logoText{
   translate: 0 -20px;
   color: #331a00;
 }
 
-.ev-container{
+.evContainer{
   display:flex;
   justify-content: center;
   align-items: center;
@@ -55,15 +55,15 @@ html{
   align-self: center;
   order:1;
 }
-.lien-ev{
+.linkEv{
   font-size: 1.5em;
   text-decoration: none;
   color:white;
 }
-.lien-ev:hover, .social-logo:hover{
+.linkEv:hover, .socialLogo:hover{
   color: #331a00;
 }
-.lien-ev::before{
+.linkEv::before{
   content: "\00BB";
 }
 
@@ -77,7 +77,7 @@ html{
   margin-top: 25px;
   margin-bottom: 25px;
 }
-.social-logo{
+.socialLogo{
   text-decoration: none;
   color: #206020;
   margin: 0 10px 0 10px;
@@ -107,7 +107,7 @@ background-color:  rgba(20, 20, 20, 0.6);
 border-radius:15px;
 padding: 10px;
 }
-.wiki {
+.wiki{
   text-decoration: underline;
   color:#fff;
 }
@@ -129,6 +129,7 @@ textarea {
 }
 .submit {
   color:#331a00;
+  font-size: 0.8em;
 }
 
 
@@ -187,21 +188,25 @@ textarea {
   background: white;
   padding-top: 20px;
 }
-.cgu{
-color:#331a00;
-font-size: 1.2em;
-text-align : center;
+.tos{
+  color:#331a00;
+  font-size: 1.2em;
+  text-align : center;
 }
 .backToTop{
-display: none;
-position: fixed;
-bottom: 20px;
-right: 20px;
-z-index: 99;
-border: none;
-outline: none;
-size:0.02vh;
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
 }
+.svgButton{
+  width: 40px;
+  height: 40px;
+}
+
 
 /* Media queries */
 
@@ -210,8 +215,9 @@ size:0.02vh;
   width: 100%; 
 }
 
+/*Pour tablettes: */
 @media only screen and (min-width: 576px) {
-  /*Pour tablettes: */
+
   .top{
     flex-direction: row;
     flex-wrap: wrap;
@@ -222,20 +228,22 @@ size:0.02vh;
   .logo{
     order:0;
   }
-  .ev-container{
+  .evContainer{
     order:1;
   }
   .form{
     width: 75%;
   }
+  .submit {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (min-width: 992px) {
-  /* Pour PC de bureau */
   .top{
     flex-direction: row;
   }
-  .ev-container{
+  .evContainer{
     order:0;
   }
   .logo{
@@ -256,11 +264,16 @@ size:0.02vh;
     color:#331a00;
     text-shadow: 2px 2px #fff;
     transition: font-size 0.5s;
+  }  
+  .svgButton{
+    width: 60px;
+    height: 60px;
   }
 }
 
+/* Pour PC de bureau */
 @media only screen and (min-width: 1250px) {
-  /* Pour PC de bureau */
+
   .form{
     width: 40%;
   }
