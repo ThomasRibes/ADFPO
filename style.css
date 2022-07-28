@@ -69,11 +69,11 @@ input {
   display:flex;  
   justify-content: center;
   align-items: center;
-  height: 300px;
+  height: 400px;
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: -300px;
+  top: -400px;
   background-color: #e8e8e8;
   transition: top 0.5s ease;
   border-bottom: 2px solid #331a00 ;
@@ -91,11 +91,11 @@ input {
 /* Close btn */
 .close {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 48px;
+  bottom: -15px;
+  font-size: 50px;
   text-decoration: none;
   color:#331a00;
+  text-align:center;
 }
 /* Icône burger */
 .burger {
@@ -190,7 +190,7 @@ input {
   align-items: center;
   text-decoration: none;
   color: #206020;
-  margin: 15px 5px 5px 15px;
+  margin: 15px 5px 15px 5px;
   text-align: center;
   font-size: 1.2em;
 }
