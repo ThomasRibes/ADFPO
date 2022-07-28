@@ -13,14 +13,16 @@ html{
 .top{
   border-bottom: 2px solid #331a00;
   display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
   background: white;
-  flex-direction : column;
   justify-content: space-around;
   align-items: center;
+  height: 150px;
 }
 
 .img{
-  width: 300px;
+  width: 150px;
 }
 .img:hover{
   transform: scale(1.05);
@@ -35,8 +37,6 @@ html{
   display:flex;
   flex-direction: column;
   align-items: center;
-  order: 0;
-  width: 300px;
 }
 
 .logoText{
@@ -44,13 +44,26 @@ html{
   color: #331a00;
 }
 
+/* Icône burger */
+.burger {
+  margin:0 50px;
+}
+.burgerIcon span {
+  display: block;
+  width: 40px;
+  height: 6px;
+  background-color:#206020;
+  margin: 6px 0;
+  border: 1px;
+}
+
 .evContainer{
-  display:flex;
+  display:none;
   justify-content: center;
   align-items: center;
   background:#206020;
   border-radius: 50%;
-  height: 5em;
+  height: 80px;
   width: 300px;
   align-self: center;
   order:1;
@@ -68,7 +81,7 @@ html{
 }
 
 .social{
-  display:flex;
+  display:none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -135,7 +148,7 @@ textarea {
 
 
  /* The snackbar - position it at the bottom and in the middle of the screen */
- #snackbar {
+  #snackbar {
   visibility: hidden; /* Hidden by default. Visible on click */
   min-width: 50%; /* Set a default minimum width */
   background-color: #333; /* Black background color */
@@ -218,11 +231,6 @@ textarea {
 
 /*Pour tablettes: */
 @media only screen and (min-width: 576px) {
-
-  .top{
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
   .social{
     width:100vw;
   }
@@ -243,6 +251,7 @@ textarea {
 @media only screen and (min-width: 992px) {
   .top{
     flex-direction: row;
+    height: 250px;
   }
   .evContainer{
     order:0;
@@ -265,6 +274,18 @@ textarea {
     color:#331a00;
     text-shadow: 2px 2px #fff;
     transition: font-size 0.5s;
+  }
+  .burger{
+    display: none;
+  }
+  .evContainer{
+    display: flex;
+  }
+  .social{
+    display: flex;
+  }
+  .img{
+    width: 300px;
   }
 }
 
