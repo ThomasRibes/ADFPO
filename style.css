@@ -7,6 +7,24 @@ html{
   padding: 0;
 }
 
+input {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
 
 /*header */
 
@@ -136,13 +154,23 @@ html{
   content: "\00BB";
 }
 
-.social{
+
+.socialContact{
   display:none;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width:300px;
   order:2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.social{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:300px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -162,7 +190,7 @@ html{
   align-items: center;
   text-decoration: none;
   color: #206020;
-  margin: 15px 0 0 15px;
+  margin: 15px 5px 5px 15px;
   text-align: center;
   font-size: 1.2em;
 }
@@ -191,6 +219,7 @@ html{
   border-radius:15px;
   padding: 10px;
   margin: 20px;
+  text-align: center;
 }
 .wiki{
   text-decoration: underline;
@@ -337,10 +366,8 @@ textarea {
     translate: 0 -20px;
     font-size: 2em;
   }
-  .social{
+  .socialContact{
     display:flex;
-    order:2;
-    width: auto;
   }
   .form{
     width: 50%;
