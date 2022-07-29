@@ -22,7 +22,7 @@
 /* Close btn */
 .close {
   position: absolute;
-  bottom: -15px;
+  top: -15px;
   font-size: 50px;
   text-decoration: none;
   color:#331a00;
