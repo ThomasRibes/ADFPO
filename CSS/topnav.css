@@ -3,11 +3,11 @@
   display:flex;  
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 300px;
   width: 100%;
   position: fixed;
   z-index: 1;
-  top: -400px;
+  top: -300px;
   background-color: #e8e8e8;
   transition: top 0.5s ease;
   border-bottom: 2px solid #331a00 ;
