@@ -1,0 +1,90 @@
+/* topnav menu */
+.topnav {
+  display:flex;  
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: -400px;
+  background-color: #e8e8e8;
+  transition: top 0.5s ease;
+  border-bottom: 2px solid #331a00 ;
+}
+.topnav a:hover {
+  color:#331a00;
+}
+/* Active class */
+.topnav.active {
+  top: 0;
+}
+/* Close btn */
+.close {
+  position: absolute;
+  bottom: -15px;
+  font-size: 50px;
+  text-decoration: none;
+  color:#331a00;
+  text-align:center;
+}
+/* Icône burger */
+.burger {
+  margin:0 50px;
+}
+.burgerIcon span {
+  display: block;
+  width: 40px;
+  height: 6px;
+  background-color:#206020;
+  margin: 6px 0;
+  border: 1px;
+}
+.socialBurger{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  order:2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.socialLogoBurger{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #206020;
+  margin: 15px 5px 15px 5px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.topNavLinks {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.evContainerBurger{
+  display:flex;
+  justify-content: center;
+  align-items: center;  
+  background:#206020;
+  border-radius: 50%;
+  height: 80px;
+  width: 150px;
+  align-self: center;
+}
+.linkEvBurger{  
+  font-size: 1.2em;
+  text-decoration: none;  
+  color:white;
+}
+.linkEvBurger:hover{
+  color: #331a00;
+}
+.linkEvBurger::before{
+  content: "\00BB";
+}

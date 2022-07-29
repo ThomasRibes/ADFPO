@@ -1,0 +1,71 @@
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+}
+
+:-moz-placeholder {
+  text-align: center;
+}
+
+::-moz-placeholder {
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+
+::placeholder {
+  color: #331a00;
+  opacity: 0.3;
+}
+
+textarea {
+  height: 25vh;
+}
+
+
+/*section*/
+.parallax{
+  background-image: url("../Pictures/Background.jpg");
+  min-height: 1000px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+  color: white;
+  font-size: 1.6em;
+  width: 90vw;
+  text-shadow: 2px 2px black;
+  font-weight: bold;
+  background-color:  rgba(20, 20, 20, 0.6);
+  border-radius:15px;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+}
+.wiki{
+  text-decoration: underline;
+  color:#fff;
+}
+.wiki:hover{
+color:#fff;
+}

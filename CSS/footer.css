@@ -1,0 +1,29 @@
+/*footer*/
+.bottom{
+  border-top: 2px solid #331a00 ;
+  height:100px;
+  display : flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  background: white;
+  padding-top: 20px;
+}
+.tos{
+  color:#331a00;
+  font-size: 1.2em;
+  text-align : center;
+}
+.backToTop{
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+}
+.svgButton{
+  width: 50px;
+  height: 50px;
+}

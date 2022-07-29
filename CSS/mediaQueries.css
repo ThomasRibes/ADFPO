@@ -1,0 +1,79 @@
+/* Media queries */
+
+/* Pour mobile */
+[class*="col-"] {
+  width: 100%; 
+}
+
+/*Pour tablettes: */
+@media only screen and (min-width: 576px) {
+  .social{
+    width:100vw;
+  }
+  .logo{
+    order:0;
+  }
+  .evContainer{
+    order:1;
+  }
+  .form{
+    width: 75%;
+  }
+  .submit {
+    font-size: 1em;
+  }
+}
+
+/* Pour écran de bureau */
+@media only screen and (min-width: 992px) {
+  .top{
+    flex-direction: row;
+    height: 250px;
+  }
+  .evContainer{
+    order:0;
+  }
+  .evContainerBurger{
+    display:none;
+  }
+  .logo{
+    order:1;
+  }
+  .logoText{
+    translate: 0 -20px;
+    font-size: 2em;
+  }
+  .socialContact{
+    display:flex;
+  }
+  .form{
+    width: 50%;
+  }
+  .wiki:hover{
+    font-size: 1.5em;
+    color:#331a00;
+    text-shadow: 2px 2px #fff;
+    transition: font-size 0.5s;
+  }
+  .burger, .topnav{
+    display: none;
+  }
+  .evContainer{
+    display: flex;
+  }
+  .img{
+    width: 300px;
+  }
+}
+
+
+@media only screen and (min-width: 1250px) {
+
+  .form{
+    width: 40%;
+  }
+  .svgButton{
+    width: 60px;
+    height: 60px;
+  }
+}

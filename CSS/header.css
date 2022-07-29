@@ -1,0 +1,83 @@
+/*header */
+.top{
+  border-bottom: 2px solid #331a00;
+  display : flex;
+  flex-direction: row;
+  flex-wrap: wrap;  
+  background: white;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+.img{
+  width: 150px;
+}
+.img:hover{
+  transform: scale(1.05);
+  transition: transform 0.5s  ;
+}
+.linkEv:hover,.linkEvBurger:hover,.socialLogo:hover,.card:hover{
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+.logo{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logoText{
+  translate: 0 -15px;
+  color: #331a00;
+  font-size: 1.5em;
+}
+.evContainer{
+  display:none;
+  justify-content: center;
+  align-items: center;
+  background:#206020;
+  border-radius: 50%;
+  height: 80px;
+  width: 300px;
+  align-self: center;
+  order:1;
+}
+.linkEv{
+  font-size: 1.5em;
+  text-decoration: none;
+  color:white;
+}
+.linkEv:hover, .socialLogo:hover{
+  color: #331a00;
+}
+.linkEv::before{
+  content: "\00BB";
+}
+.socialContact{
+  display:none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:300px;
+  order:2;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.social{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:300px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.socialLogo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #206020;
+  margin: 15px 5px 15px 5px;
+  text-align: center;
+  font-size: 1.2em;
+}
