@@ -67,5 +67,6 @@ textarea {
   color:#fff;
 }
 .wiki:hover{
-color:#fff;
+  color:#331a00;
+  text-shadow: 2px 2px #fff;
 }

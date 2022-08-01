@@ -5,6 +5,13 @@
   width: 100%; 
 }
 
+/*Pour petit mobile: */
+@media only screen and (min-width: 400px) {
+  .form {
+    width: 95%;
+  }
+}
+
 /*Pour tablettes: */
 @media only screen and (min-width: 576px) {
   .social{
@@ -16,12 +23,15 @@
   .evContainer{
     order:1;
   }
-  .form{
+  .formItem, .formLabel{
     width: 75%;
   }
   .submit {
     font-size: 1em;
   }
+  .form {
+    width: 85%;
+  }  
 }
 
 /* Pour écran de bureau */
@@ -46,14 +56,8 @@
   .socialContact{
     display:flex;
   }
-  .form{
+  .formItem, .formLabel{
     width: 50%;
-  }
-  .wiki:hover{
-    font-size: 1.5em;
-    color:#331a00;
-    text-shadow: 2px 2px #fff;
-    transition: font-size 0.5s;
   }
   .burger, .topnav{
     display: none;
@@ -64,16 +68,22 @@
   .img{
     width: 300px;
   }
+  .form {
+    width: 75%;
+  }
 }
 
 
 @media only screen and (min-width: 1250px) {
 
-  .form{
+  .formItem, .formLabel{
     width: 40%;
   }
   .svgButton{
     width: 60px;
     height: 60px;
+  }
+  .form {
+    width: 50%;
   }
 }

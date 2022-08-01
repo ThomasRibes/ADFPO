@@ -82,16 +82,16 @@
   <!-- contenu principal section -->
   <section>
     <div class="parallax">
-      <form id="form" class="text d-flex flex-column justify-content-center align-content-center w-75" action="./index.html" onSubmit="return snackPop();">
-        <label for="fname" class="align-self-center m-1">Prénom:</label><br>
-        <input type="text" id="fname" name="fname" class="align-self-center form m-1" placeholder="Votre prénom" required><br>
-        <label for="lname" class="align-self-center m-1">Nom:</label><br>
-        <input type="text" id="lname" name="lname" class="align-self-center form m-1" placeholder="Votre nom" required>
-        <label for="email" class="align-self-center m-1">Email:</label><br>
-        <input type="email" id="email" name="email" class="align-self-center form m-1" placeholder="exemple@exemple.fr" required><br>
-        <label for="text" class="align-self-center m-1">Demande de réservation et/ou <br> d'informations:</label><br>
-        <textarea type="input" id="text" name="text" class="align-self-center form m-1" placeholder="Tapez ici ..." required></textarea>
-        <input type="submit" value="Envoyer ma demande" class="align-self-center form m-3 submit">
+      <form id="form" class="form" action="./index.html" onSubmit="return snackPop();">
+        <label for="fname" class="formLabel">Prénom:</label><br>
+        <input type="text" id="fname" name="fname" class="formItem" placeholder="Votre prénom" required><br>
+        <label for="lname" class="formLabel">Nom:</label><br>
+        <input type="text" id="lname" name="lname" class="formItem" placeholder="Votre nom" required>
+        <label for="email" class="formLabel">Email:</label><br>
+        <input type="email" id="email" name="email" class="formItem" placeholder="exemple@exemple.fr" required><br>
+        <label for="text" class="formLabel">Demande de réservation et/ou <br> d'informations:</label><br>
+        <textarea type="input" id="text" name="text" class="formItem" placeholder="Tapez ici ..." required></textarea>
+        <input type="submit" value="Envoyer ma demande" class="formItem submit">
       </form>
       <div id="snackbar" class="">Merci pour votre demande.<br>Vous allez être redirigé vers la page d'accueil.</div>
     </div>    
